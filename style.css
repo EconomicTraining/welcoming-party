@@ -1,0 +1,253 @@
+
+html {
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+}
+
+
+.background {
+    height: 100%;
+    background: rgb(210,224,251);
+    background: linear-gradient(93deg, rgba(210,224,251,1) 0%, rgba(222,229,212,1) 35%, rgba(154,188,255,1) 100%);  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+nav {
+    background-color: #1D1E2C;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    justify-content: space-between;
+    padding-right: 30px;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+nav h2 {
+    margin-left: 15px;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    padding-top: 80px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1.5s ease-in-out 1s, transform 1s ease-in-out 1s; /* Tunda animasi untuk main */
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.section1 {
+    width:65%;
+    justify-self: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff8f2;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    gap: 0px;
+    padding-bottom: 60px;
+}
+
+.section1 img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.section1 h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: -3px;
+}
+
+.section1 p {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 60px;
+    font: 1.3rem sans-serif;
+    width: 90%;
+}
+
+.section1 iframe {
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.section-2 {
+    width: 89%;
+    display: flex;
+    gap: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    gap: 0px;
+    display: grid;
+    margin-bottom: 30px;
+}
+
+
+.container h2 {
+    margin-bottom: 0px;
+}
+
+.container p {
+    justify-self: center;
+    margin-bottom: 50px;
+    font: 1em;
+    font: caption;
+}
+
+.container button {
+    width: fit-content;
+    justify-self: center;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+   background: rgb(254,249,217);
+    background: linear-gradient(90deg, rgba(254,249,217,1) 0%, rgba(210,224,251,1) 100%, rgba(254,249,217,1) 100%);
+    font-size: 1rem;
+    margin: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container a {
+    justify-self: center;
+    text-decoration: none;
+}
+
+
+button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#countdown {
+    justify-self: center;
+    font-size: 1.3rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+iframe {
+    box-shadow:0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    background-color: #1D1E2C; /* Warna abu-abu gelap */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px; /* Ukuran ikon */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f39c12; /* Warna berubah saat di-hover */
+}
+
+@media (max-width:480px) {
+    .section1 {
+        width: 90%;
+    }
+
+
+    .section1 h1 {
+        font-size: 2rem;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .section1 p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+   .section-2 {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+        align-items: center;
+   } 
+
+   .section1 img {
+    width: 100%;
+   }
+
+   .container h2 {
+    font-size: 1.2rem;
+   }
+   
+   .container p {
+    font-size: 1rem;
+   }
+
+   iframe {
+    margin-top: -30px;
+    height: 250px;
+   }
+}
